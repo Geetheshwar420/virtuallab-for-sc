@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Crypto Lab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/node-forge@1.3.1/dist/forge.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">🔐 Crypto Lab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#algorithms">Algorithms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#docs">Documentation</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Algorithm Cards Section -->
+        <section id="algorithms" class="mb-5">
+            <h2 class="text-center mb-4">🔑 Cryptographic Algorithms</h2>
+            <div class="row g-4" id="algorithm-cards"></div>
+        </section>
+
+        <!-- Algorithm Demos -->
+        <div id="demos-container">
+            <!-- Demo sections will be loaded dynamically -->
+        </div>
+
+        <!-- Documentation Section -->
+        <section id="docs" class="my-5">
+            <h2 class="text-center mb-4">📚 Documentation</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Cryptography Guide</h5>
+                            <p class="card-text">Comprehensive guide to modern cryptography</p>
+                            <a href="docs/cryptography-guide.pdf" class="btn btn-primary" download>
+                                <i class="fas fa-download"></i> Download PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more documentation cards -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="theme-toggle" class="btn btn-secondary rounded-circle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Crypto Lab | Educational Project</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
